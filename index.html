@@ -3,48 +3,223 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tutti: Home</title>
+    <title>tutti: Home</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <div class="header-container">
-        <h1>Tutti</h1>
+        <h1>tutti</h1>
         <nav>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="#section3">Section 3</a></li>
+            <li><a href="#projects">Projects</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
+    <!-- Main content -->
     <main>
-      <p>
-        <a
-          href="https://docs.google.com/presentation/d/1mhhfEO1x2DTe7xPxlkXVHXc7f0NkshwRWuwzRmRh1X0/edit?usp=sharing"
-          >Assignment 1: Needfinding (Slides)</a
-        >
-      </p>
-      <p>
-        <a
-          href="https://docs.google.com/presentation/d/1d_rZ3q70eCe3jJQo0lfrpwKwe-dGDrS9QHC8KturIKI/edit?usp=sharing"
-          >Assignment 2: Additional Needfinding, POVs, HMWs, Brainstorming &
-          Experience Prototypes (Slides)</a
-        >
-      </p>
-      <p>
-        <a
-          href="https://docs.google.com/presentation/d/1SjpU-9q9AjiFaXDYJi700Tg1ER50cV6U/edit?usp=sharing&ouid=100653559833103877972&rtpof=true&sd=true"
-          >Assignment 4: Concept Video (Slides)</a
-        >
-      </p>
-      <p>
-        <a href="https://youtu.be/q8iS9qjpSP8"
-          >Assignment 4: Concept Video (YouTube Video)</a
-        >
-      </p>
+      <!-- Landing Page Intro -->
+      <section class="intro">
+        <h1 class="logo">tutti</h1>
+        <p class="slogan">"On-demand peer tutoring you can trust.”</p>
+        <div class="mission">
+          <h2>Our Mission</h2>
+          <ul>
+            <li>
+              Connect students in need of academic support with qualified peer
+              tutors.
+            </li>
+            <li>
+              Foster a community where learning and teaching are accessible to
+              everyone.
+            </li>
+            <li>
+              Use AI to match students and tutors based on expertise and
+              availability.
+            </li>
+            <li>
+              Ensure a seamless, trustworthy tutoring experience for all
+              students.
+            </li>
+          </ul>
+        </div>
+        <iframe
+          width="700"
+          height="400"
+          src="https://www.youtube.com/embed/q8iS9qjpSP8"
+          title="Concept Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <!-- Meet the Team Section -->
+      <section class="team">
+        <h2>Meet the Team</h2>
+        <div class="team-grid">
+          <!-- Team Member 1 -->
+          <div class="team-card">
+            <img src="assets/images/jennifer.png" alt="Jennifer" />
+            <h3>Jennifer (26)</h3>
+            <p>Computer Science (AI)</p>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="team-card">
+            <img src="assets/images/alex.png" alt="Alex" />
+            <h3>Alex ('26)</h3>
+            <p>Computer Science (HCI)</p>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="team-card">
+            <img src="assets/images/meghana.png" alt="Meghana" />
+            <h3>Meghana ('26)</h3>
+            <p>Computer Science (HCI) & Economics</p>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="team-card">
+            <img src="assets/images/jonah.png" alt="Jonah" />
+            <h3>Jonah ('26)</h3>
+            <p>Computer Science (HCI) & Music</p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <h2>Projects</h2>
+          <p class="section-description"></p>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <img src="./assets/images/empathyMap.png" alt="Needfinding" />
+              <div class="project-info">
+                <h3>Needfinding</h3>
+                <!-- <p>Me when the needs are finding</p> -->
+                <a href="assets/slides/assignment1.pdf" class="btn"
+                  >Slides (pdf)</a
+                >
+                <a href="./assets/slides/assignment1.pptx" class="btn"
+                  >Slides (pptx)</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img
+                src="assets/images/expPrototypes.png"
+                alt="Experience Prototypes"
+              />
+              <div class="project-info">
+                <h3>Experience Prototypes</h3>
+                <!-- <p>Me when the prototypes have experiences</p> -->
+                <a href="assets/slides/assignment2.pdf" class="btn"
+                  >Slides (pdf)</a
+                >
+                <a href="assets/slides/assignment2.pptx" class="btn"
+                  >Slides (pptx)</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card">
+              <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/q8iS9qjpSP8"
+                title="Concept Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="project-info">
+                <h3>Concept Video</h3>
+                <!-- <p>Me when the video is a concept</p> -->
+                <a href="assets/slides/assignment4.pdf" class="btn"
+                  >Slides (pdf)</a
+                >
+                <a href="assets/slides/assignment4.pptx" class="btn"
+                  >Slides (pptx)</a
+                >
+                <a href="https://youtu.be/q8iS9qjpSP8" class="btn"
+                  >Video (YouTube)</a
+                >
+                <a href="assets/videos/assignment4_video.mp4" class="btn"
+                  >Video (mp4)</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img
+                src="assets/images/lowFiPrototype.png"
+                alt="Low-Fi Prototype"
+              />
+              <div class="project-info">
+                <h3>Low-Fi Prototype</h3>
+                <!-- <p>Me when the prototype is... honestly I'm out</p> -->
+                <a href="assets/slides/assignment5.pdf" class="btn"
+                  >Slides (pdf)</a
+                >
+                <a href="assets/slides/assignment5.pptx" class="btn"
+                  >Slides (pptx)</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img
+                src="./assets/images/empathyMap.png"
+                alt="Med-Fi Prototype"
+              />
+              <div class="project-info">
+                <h3>Med-Fi Prototype</h3>
+                <!-- <p>What's the deal with airline food?</p> -->
+                <a
+                  href="https://www.figma.com/proto/GyUpmnb6Z08Y2LOmmlnaUZ/Med-Fi-Prototype?node-id=0-1&t=mp9dtFlymoTCKQgr-1"
+                  class="btn"
+                  >Try Our Med-Fi Prototype!</a
+                >
+                <a href="./assets/slides/assignment6.pptx" class="btn"
+                  >Slides (pptx)</a
+                >
+                <a href="./assets/slides/assignment6.pdf" class="btn"
+                  >Slides (pdf)</a
+                >
+                <a href="./assets/docs/assignment6_readme.pdf" class="btn"
+                  >README (pdf)</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img
+                src="./assets/images/empathyMap.png"
+                alt="Med-Fi Prototype"
+              />
+              <div class="project-info">
+                <h3>Med-Fi Prototype</h3>
+                <!-- <p>What's the deal with airline food?</p> -->
+                <a href="assets/slides/assignment1.pdf" class="btn"
+                  >Slides (pdf)</a
+                >
+                <a href="./assets/slides/assignment1.pptx" class="btn"
+                  >Slides (pptx)</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <p>&copy; 2024 tutti</p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
