@@ -1,10 +1,8 @@
 :root {
   --primary-color: #3498db;
-  --secondary-color: #bb0000;
-  /*  --secondary-color: #2ecc71;*/
+  --secondary-color: #2ecc71;
   --background-color: #f4f4f4;
   --text-color: #333;
-  --header-background: #ffffff;
   --font-family: "Arial", sans-serif;
   --spacing: 16px;
 }
@@ -90,7 +88,7 @@ body {
   margin-right: 10px;
   margin-bottom: 10px;
   color: #fff;
-  background-color: #2ecc71;
+  background-color: var(--secondary-color);
   border-radius: 15px;
   text-decoration: none;
   transition: background-color 0.3s;
@@ -106,10 +104,15 @@ body {
   }
 }
 
+/* Sticky Header */
 header {
-  background-color: #333; /* Dark gray background */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--secondary-color); /* Green color */
   color: #fff;
   padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
@@ -154,10 +157,16 @@ header {
   margin-bottom: 20px;
 }
 .mission {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
+  text-align: center;
+  margin: 40px auto; /* Adds spacing between the mission and other elements */
+  max-width: 800px;
 }
+
+.mission h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
 .mission ul {
   list-style: none;
   padding: 0;
@@ -166,6 +175,10 @@ header {
   margin-bottom: 10px;
   font-size: 1em;
   color: #333;
+}
+
+iframe {
+  margin-top: 40px; /* Space between the mission and video */
 }
 
 /* Team Section */
